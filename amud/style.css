@@ -1,0 +1,619 @@
+*{
+  box-sizing: border-box;  
+}
+
+body{
+    width:100%;
+    margin:0px auto;
+    background-image:url('images/bg4.png');
+    /*min-height:120vh;*/
+    font-family: Calibri, Candara, sans-serif;
+}
+
+.hebrewFont{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+header{
+   background-image:url("images/gemora.png");
+   background-color:#F0F0F0;
+    height:230px;
+    color:#B0983D;
+}
+
+#headerDiv{
+    position:relative;
+    width:80%;
+    margin:0px auto;
+    
+}
+
+#coverHeader{
+    position:absolute;
+    width:100%;
+     height:230px;
+     top:0px;
+     left:0px;
+     opacity: .7;
+     background-color:white;
+}
+
+
+#name{
+     padding-top:40px;
+}
+
+#name img{
+    width:300px;
+}
+
+nav{
+    display:inline-block;
+    position:absolute;
+    top:15px;
+    right:0px;
+}
+
+nav li{
+    list-style-type: none;
+    display:inline-block;
+    font-size:25px;
+    font-weight:bold;
+    padding:0px 35px 5px 35px;
+}
+
+nav a{
+    color:black;
+    text-shadow:1px -1px 1px #D7B37A;
+    text-decoration: none;
+}
+
+nav a:hover{
+    padding-bottom:5px;
+    border-bottom:3px solid black;
+}
+
+
+
+#dayInfo{
+    position:absolute;
+    top:175px;
+    width:100%;
+    background-color: black;
+    opacity: .65;
+    padding:15px;
+}
+
+#dayInfoInnerDiv{
+    width:75%;
+    margin:0px auto;
+    font-size:25px;
+    color:white;
+}
+
+#dayInfoLeft{
+    float:left;
+    width:45%;
+    padding-left:10px;
+}
+
+#dayInfoRight{
+    float:right;
+    width:45%;
+    text-align:right;
+    padding-right:10px;
+}
+
+
+#amudLocation{
+     width:80%;
+     margin:50px auto 75px auto;
+     /*height:1200px;*/
+}
+
+#amudControls{
+    text-align:center;
+}
+
+#prevAmud, #nextAmud {
+    display:inline-block;
+    /*padding:10px;*/
+    background-color:#625F5F;
+    border:1px solid black;
+    color:white;
+    font-weight:bold;
+    font-size:30px;
+    /*width:75px;*/
+    width:10%;
+    height:50px;
+    line-height:50px;
+}
+
+#prevAmud{
+    border-top-left-radius: 20px;
+    /*border-bottom-left-radius: 10px;*/
+}
+
+#nextAmud{
+    border-top-right-radius: 20px;
+    /*border-bottom-right-radius: 10px;*/
+}
+
+#prevAmud:hover,#nextAmud:hover{
+    border:1px solid #625F5F;
+    cursor: pointer;
+    background-color: #514F4F;
+    color:#F8F8F8;
+}
+
+#thisAmud{
+    display:inline-block;
+    width:80%;
+    border-top:1px double gray;
+    border-bottom:1px double gray;
+    background-color:#F2F2F2;
+    font-size:30px;
+    height:50px;
+    line-height:50px;
+    margin:0px -5px 0px -5px;
+}
+
+#onStart{
+    color:#FFFFFF;
+}
+
+#findAmud{
+    display:none;    
+}
+
+#modular{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100vh;
+    background-color:gray;
+    opacity:.8;
+    z-index:3000;
+}
+
+#mesechtaForm{
+    text-align:center;
+    position: fixed;
+    display:inline-block;
+    background-color:white;
+    border:8px solid gray;
+    width:50%;
+    border-radius: 20px;
+    padding:50px;
+    z-index:3001;
+}
+
+.formDiv{
+    clear:both;
+    padding:10px;
+    font-size:20px;
+}
+
+#mesechtaForm select{
+    width:200px;
+    padding:5px;
+    border-radius:5px;
+    font-size:20px;
+}
+
+label{
+    float:left;
+    text-align:right;
+    width:40%;
+    padding:5px;
+}
+
+.selectContainer{
+    float:right;
+    text-align:left;
+    width:58%;
+}
+
+#okFind, #cancelFind{
+    display:inline-block;
+    width:150px;
+    padding:10px;
+    background-color:gray;
+    border-radius:10px;
+    cursor: pointer;
+    color:white;
+    margin-top:10px;
+}
+
+#okFind:hover, #cancelFind:hover{
+    padding:9px;
+    border:1px solid white;
+}
+
+#bodyLeft{
+    float:left;
+    width:70%;
+    min-height:800px;
+}
+
+#bodyLeft img{
+    width:100%;
+    border:1px solid #625F5F;
+    border-top:none;
+    margin-bottom:20px;
+}
+
+#imgDiv{
+    position:relative;
+}
+
+#coverImg{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background-color:lightgray;
+    text-align:center;
+    padding:100px;
+}
+
+#coverImg h1, #coverImg h3{
+    margin:0px;
+}
+
+#bodyRight{
+    float:right;
+    width:25%;
+    text-align:center;
+}
+
+#bodyRight h4, #bodyRight h5{
+    margin:0px;
+    font-weight:normal;
+}
+
+#displayFind, #download, #todaysAmud{
+    background-color:#625F5F;
+    color:white;
+    border-radius: 10px;
+    padding:10px;
+    margin:10px;
+    cursor: pointer;
+}
+
+#displayFind:hover, #download:hover, #todaysAmud:hover{
+    padding:8px;
+    border:2px solid black;
+}
+
+#signUp{
+    background-color:lightgray;
+    border:1px solid darkgray;
+    border-radius:15px;
+    padding:30px 5px;
+    margin:10px;
+    color:black;
+}
+
+#signUp a{
+    display:block;
+    text-decoration: none;
+    background-color:#F0F0F0;
+    color:black;
+    width:50%;
+    border-radius: 10px;
+    padding:10px;
+    margin:30px auto 0px auto;
+    cursor: pointer;
+}
+
+#signUp a:hover{
+    padding:9px;
+    margin:30px auto 2px auto;
+}
+
+.sponsorDiv{
+    clear:both;
+    background-color:#F3D99E;
+    border:5px double gray;
+    border-radius: 20px;
+    margin:10px;
+    padding:50px 0px;
+    color:#625F5F;
+    font-size: 20px;
+    font-weight:bold;
+    text-align:center;
+    position:relative;
+}
+
+.sponsorDiv h3{
+    margin:0px;
+}
+
+.nail{
+    background-color:gray;
+    border-radius:50%;
+    width:5px;
+    height:5px;
+    position:absolute;
+}
+
+#nailTR{
+    top:10px;
+    right:10px;
+}
+
+#nailTL{
+    top:10px;
+    left:10px;
+}
+
+#nailBR{
+    bottom:10px;
+    right:10px;
+}
+
+#nailBL{
+    bottom:10px;
+    left:10px;
+}
+
+#edafLeft, #edafCenter{
+    display:inline-block;
+    height:60px;
+    width:115px;
+}
+
+#edafLeft{
+    text-align:right;
+    cursor:pointer;
+}
+
+#edafCenter{
+    background-image:url('images/bg4.png');
+    margin-left:-7px;
+    color:black;
+    transform:translate(0px,-10px);
+    border:1px solid gray;
+}
+
+#edafCenter h6{
+    margin:0px;
+    text-align: left;
+}
+
+#edafMesechta{
+    display:block;
+    margin-top:-2px;
+}
+
+#edafLine3{
+    margin-top:-5px;
+    text-align:left;
+}
+
+#edafGo{
+    cursor:pointer;
+}
+
+footer{
+    clear:both;
+    background-color:lightgray;
+    position:relative;
+    text-align:center;
+    padding:50px;
+    font-size:20px;
+    background-color: #625F5F;
+    color:white;
+}
+
+footer a{
+    /*text-decoration: none;*/
+    color:white;
+    cursor:pointer;
+}
+
+.forMobile{
+    display:none;
+}
+
+@media screen and (max-width: 1250px){
+        #headerDiv,#dayInfoInnerDiv,#amudLocation,#aboutPage{
+            width:100%;
+        }
+}
+
+@media screen and (min-width: 700px){
+        .noDesktop{
+            display:none;
+        }
+}
+
+@media screen and (max-width: 950px){
+        nav li{
+            padding:5px 15px 5px 15px;
+        }
+}
+
+@media screen and (max-width: 800px){
+        nav li{
+             padding:20px 15px 5px 15px;
+            font-size:20px;
+        }
+}
+
+@media screen and (max-width: 700px){
+    .forMobile{
+        display:block;
+    }
+
+    .noMobile{
+        display:none;
+    }
+
+    #menuDiv{
+        position:absolute;
+        top:0px;
+        width:100%;
+        background-color: black;
+        opacity: .65;
+        cursor:pointer;
+        padding:10px;
+    }
+
+    nav{
+        display:none;
+        /*position:relative;*/
+        top:40px;
+        left:0px;
+        z-index:1000;
+    }
+
+    nav ul{
+        margin:0px;
+        padding-left:0px;
+    }
+
+    nav li{
+        font-size:20px;
+        font-weight:normal;
+        background-color:#E3E1DE;
+        border-bottom: 1px solid white;
+        display:block;
+        width:100%;
+        padding:5px;
+        text-align:center;
+    }
+
+    nav li:hover{
+        background-color:#CECCCA;
+    }
+
+    nav a{
+        text-shadow:none;
+        display:inline-block;
+        width:100%;
+    }
+
+    nav a:hover{
+        border-bottom:none;
+        padding-bottom:0px;
+    }
+
+    #name{
+        position:relative;
+        top:35px;
+        text-align:center;
+    }
+
+    #name img{
+        display:inline-block;
+        width:220px;
+        margin:0px auto;
+    }
+
+    #dayInfo{
+        padding:5px;
+    }
+
+    #dayInfoInnerDiv{
+        font-size:20px;
+    }
+
+    #mesechtaForm{
+        border:2px solid gray;
+        width:100%;
+        padding:0px;
+    }
+
+    #mesechtaForm select{
+        width:125px;
+    }
+
+    #amudLocation{
+        margin:50px auto 0px auto;
+    }
+
+    #bodyRight,#bodyLeft{
+        float:none;
+        width:100%;
+    }
+
+    #bodyLeft{
+        min-height: 300px;
+    }
+
+    #thisAmud{
+        width:70%;
+        font-size:20px;
+    }
+
+    #prevAmud, #nextAmud {
+        width:15%;
+        font-size:20px;
+    }
+
+    #displayFind, #download, #todaysAmud, #sponsorButton{
+        display:block;
+        width:85%;
+        margin:10px auto;
+    }  
+
+    
+
+    #sponsorDivMobile, #mobileSignUp{
+        position:relative;
+        text-align:center;
+        padding:25px;
+        font-size: 20px;
+        clear:both;
+        background-color:#F3D99E;
+    }
+
+    #mobileSignUp{
+        border-top: 1px double gray;
+        border-bottom:3px double gray;
+        padding:15px;
+    }
+
+    #mobileSignUp h6{
+        margin:0px;
+    }
+
+    #sponsorDivMobile{
+        border-bottom: 1px double gray;
+    }
+
+    #sponsorDivMobile h3{
+        margin:0px;
+    }
+
+    #coverImg{
+        /*height:800px;*/
+        font-size:30px;
+        padding:20px;
+    }
+
+    #starting{
+        right:1%;
+        top:1%;
+        width:150px;
+    }
+
+    #coverImg h1{
+        font-size:25px;
+    }
+
+    #coverImg h3{
+       font-size:15px;
+    }
+}
+
+
