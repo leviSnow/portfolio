@@ -1,0 +1,201 @@
+*, *before, *after{
+    box-sizing: border-box;
+}
+
+html{
+    background-color: oldlace;
+}
+
+body{
+    text-align: center;
+    width:80%;
+    margin:0 auto;
+    background-color: navajowhite;
+    min-height:100vh;
+    padding-top:5px;
+}
+
+header{
+    border:8px double burlywood;
+    background-color:oldlace;
+    border-radius:20px;
+    width:90%;
+    min-height:175px;
+    margin:20px auto 0px auto;
+    font-family:Segoe UI black;
+    font-size: 30px;
+    color:darkgray;
+}
+
+#storeName{
+    float:left;
+    padding-left:50px;
+}
+
+#navigate{
+    float:right;
+    padding-right:25px;
+}
+
+#navigate{
+    width:200px;
+    margin-top:-40px;
+}
+
+#navigate button, #navigate a{
+    display:block;
+    width:200px;
+    height:45px;
+    margin-top:10px;
+    text-decoration: none;
+}
+
+header button{
+    width:250px;
+    height:75px;
+}
+
+#title{
+    text-transform:uppercase;
+}
+
+button {
+    font-size:20px;
+    padding:10px;
+    border-radius:10px;
+}
+
+button a{
+    text-decoration: none;
+}
+
+button:hover, .squares input[type=submit]:hover,#filters input[type=submit]:hover{
+    background-color: lightgray;
+    border:2px solid lightgray;
+    cursor: pointer;
+}
+
+#sideBody{
+    float:left;
+    width:175px;
+    height:600px;
+    margin-top:70px;
+    margin-left:50px;
+}
+
+#filters{
+    background-color: oldlace;
+    border:4px double burlywood;
+    border-radius:25px;
+    width:150px;
+    min-height:300px;
+    padding:10px;
+    margin-bottom:20px;
+}
+
+#indivFilter{
+    width:125px;
+    margin:0 auto;
+}
+
+input[type=checkbox]{
+    float:right;
+}
+div{
+    clear:right;
+}
+
+#filters input[type=submit]{
+    font-size:20px;
+    border-radius:10px;
+}
+
+#filters input[type=submit]{
+    margin-top:30px;
+    width:150px;
+}
+
+#mainBody{
+    float:left;
+    margin-left:40px;
+    margin-top:25px;
+}
+
+#promo{
+    width:500px;
+    background-color: lightyellow;
+    border-radius: 20px;
+    font-size:20px;
+    padding:25px;
+    margin:0 auto 20px auto;
+}
+
+#afterMain{
+    clear:left;
+}
+
+#inventory td, #inventory th{
+    padding:5px 50px;;
+}
+
+#inventory  th{
+    border-bottom: 3px solid black;
+}
+
+#clear{
+    clear:left;
+    border-top:1px solid black;
+}
+
+.squares{
+    background-color:oldlace;
+    border:4px double burlywood;
+    border-radius: 25px;
+    display: inline-block;
+    margin:50px;
+    font-size:25px;
+    padding:30px;
+    min-height:250px;
+    width:400px;
+}
+
+.squares h3{
+    margin-top:0px;
+    font-size:35px;
+}
+
+.squares input[type=submit]{
+    width:250px;
+    margin-top:25px;
+    font-size:25px;
+    border-radius: 20px;
+}
+
+#adminSquare{
+    background-color:oldlace;
+    border:4px double burlywood;
+    border-radius:20px;
+    padding:30px 30px 50px 30px;
+    width:600px;
+    margin:40px auto;
+    
+}
+
+#adminSquare button{
+    width:250px;
+    margin:10px;
+}
+
+.error h5{
+    margin:0px;
+    color:red;
+}
+
+.aboutUs{
+    margin: 50px auto;
+    padding:50px;
+    background-color:oldlace;
+    border:4px double burlywood;
+    border-radius: 25px;
+    width:600px;
+}
